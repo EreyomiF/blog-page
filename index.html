@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Welcome to My Page</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+<style>
+      
+    form[role="search"] input[type="search"]:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #ced4da;}
+      body {
+      padding-top: 70px; /* Add padding to body to offset the fixed header */
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+       /* Optional: Adds a blur effect to the header */
+      z-index: 1000; /* Ensure the header stays on top of other content */
+    }
+    @font-face {
+  font-family: 'NotoSerifKhitanSmallScript';
+  src: url('./NotoSerifKhitanSmallScript-Regular.ttf') format('truetype'),
+       url('./NotoSerifKhitanSmallScript-Regular.ttf') format('tiff'),
+       url('./NotoSerifKhitanSmallScript-Regular.ttf') format('tiff');
+  /* Add more font formats if you have them available (e.g., .eot for Internet Explorer) */
+}
+
+@font-face {
+  font-family: 'NotoSerifKhitanSmallScript';
+  src: url('fonts/NotoSerifKhitanSmallScript-Regular.ttf') format('truetype');
+}
+h1, h2, h3, h4, h5  {
+  font-family: 'NotoSerifKhitanSmallScript', serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+
+
+.text-p{
+  font-style: italic;
+  font-family: 'NotoSerifKhitanSmallScript', serif;
+
+}
+  
+
+    .jumping-text {
+font-size: x-large;
+      color: rgb(8, 8, 8);
+      position: relative; /* Use relative positioning */
+      animation: jump 0.5s infinite alternate;
+      font-style: italic;
+    }
+
+    .lead{
+      font-family: 'NotoSerifKhitanSmallScript', serif;
+
+    }
+#typewriter{
+  font-family: 'NotoSerifKhitanSmallScript', serif;
+font-weight:200;
+font-size: x-large;
+font-style: italic;
+}
+
+    @keyframes jump {
+      0% {
+        transform: translateY(0); /* Initial position */
+      }
+      100% {
+        transform: translateY(-20px); /* Jumping position */
+      }
+    }
+
+    .waving-emoji {
+    animation: wave 1s infinite; /* Adjust the duration to make it faster */
+    display: inline-block;
+    transform-origin: center;
+  }
+
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(30deg);
+    }
+  }
+  .blog-header-logo{
+    font-family: 'NotoSerifKhitanSmallScript', serif;
+
+  }
+  header{
+    background-color: #484747;
+  }
+
+
+</style>
+</head>
+<body class="bg-warning-secondary ">
+
+  <header class=" lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#">Subscribe</a>
+      </div>
+      <div class="col-4 text-center">
+        <h2 class="blog-header-logo text-white " style="font-weight: bolder;">EREYOMI</h2>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-light" href="#">Sign up</a>
+      </div>
+    </div>
+  </header>     
+       <main>
+  <div class="container my-5">
+    <div class="container p-0">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg ">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 ">
+
+        <h2 class="display-1 lh-1 text-body-emphasis" style="font-style: italic;">Hey!
+          <span class="waving-emoji">👋</span>
+        </h2><br>
+        <h1 id="text-h1" style="font-style: italic;font-size:3em ;"></h1><br><br>
+        <h6 id="text-p"class="lead jumping-text " style="font-style: italic"></h6>
+         <p id="typewriter" style="font-style: italic;"></p>
+        
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold" style="font-style: italic;">Meet me...</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" style="font-style: italic;">Tour</button>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3 img-fluid" src="./images/IMG_7769.JPG" alt="" width="500">
+      </div>
+    </div>
+  </div>
+<hr>
+  <div class="row align-items-md-stretch" >
+    <div class="col-md-6">
+      <div class="h-100 p-5 text-bg-dark heythere rounded-3 ">
+        <h2 class="fixedd"><strong>Hello there! Welcome to my website .<br> i'm glad you stopped by!</strong></h2>
+        <p class="fixedd">feel free to explore and check out the diffrent sections of the site.</p>
+        <button class="btn btn-outline-light fixedd" type="button">Explore</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="h-100 p-5 bg-body-tertiary border rounded-3 ">
+        <h2 style="color: white";>Thank you for visiting , and i hope you enjoy your time here!</h2>
+        <p style="color:white;">If you have any question or feedbacks , dont hesitate to get in touch with me.</p>
+        <a href="./projects.html" class="btn btn-outline-secondary">Projects</a>
+      </div>
+    </div>
+  </div>
+<br>
+    <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Exploring Funmilola's  World of Web Dev
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">Inspire & Flourish: Unlock Your Potential while Riding the Waves of Web Development.</h2><hr>
+        <h4>LATEST TECH NEWS</h4><hr>
+        <img src="./images/Artificial-Intelligence-580-2.jpg"  class="img-fluid" style="width: 730px;height: 350px;border-radius: 3%;">
+        <p class="blog-post-meta">January 1, 2021 by <a href="https://blog.bit.ai/programming-blogs-and-websites/">BIT.AI</a></p>
+        <p>13 Programming Blogs and Websites to Improve Your Coding Skills!</p>
+        <hr>
+        <p>Code enthusiasts! As we embark on this journey of discovery, we'll uncover the secrets of successful web development, blending creativity with technical expertise. Get ready for a blog post brimming with inspiration!"</p>
+        
+        <h2 class="shadow-lg p-3 mb- bg-body-light rounded">DevMind:Inspirations from the Code Masters</h2>
+         <div class=" rounded-3 ">
+          <section class=" rounded-3" style="">
+         <p> Quotes to Energize Software Engineers</p>
+        <blockquote class="blockquote">
+          <p>"PixelPerfection: Designing Web Delights"
+          </p>
+        </blockquote>
+        <p>These are a curated collection of inspiring quotes designed to ignite the passion and creativity of software engineers. In this article, we present a compilation of thought-provoking words from seasoned developers, industry leaders, and coding pioneers. Whether you're a seasoned pro or just starting your coding journey, these quotes are bound to spark new ideas and motivate you to reach new heights in your software engineering endeavors. So, get ready to be energized and inspired as we delve into the minds of software engineers who have shaped the digital world with their innovative thinking and exceptional skills.</p>
+      </section>
+      <section class="rounded-3" style="background-color: #eaeae8;">
+        <h3 style="display: inline-block;  border-radius: 5px; color: rgb(9, 9, 9);">CodeSpeak:</h3>
+        <p>Explore 'Quotable Moments from Software Engineers' and discover 'Developer Diaries: Wisdom Shared by Software Engineers' for a captivating journey into the minds of coding experts.</p>
+        <figure>
+            <p>"Any fool can write code that a computer can understand.
+               Good programmers write code that humans can understand."</p>
+          <figcaption class="blockquote-footer">
+            <cite title="Source Title">Martin Fowler</cite>
+          </figcaption>
+          <P>"The function of good software is to make the complex appear simple."</P>
+          <figcaption class="blockquote-footer">
+            <cite title="Source Title">Grady Booch</cite>
+          </figcaption>
+
+            <P>"Software is like entropy: It is difficult to grasp, weighs nothing, and obeys the second law of thermodynamics; i.e., it always increases."  </P>
+            <figcaption class="blockquote-footer">
+              <cite title="Source Title"> Norman Augustine</cite>          </figcaption>
+
+              <P>"Premature optimization is the root of all evil."</P>
+              <figcaption class="blockquote-footer">
+                <cite title="Source Title">Donald Knuth</cite>          </figcaption>
+
+                <P>"Debugging is like being the detective in a crime movie where you are also the murderer."</P>
+                <figcaption class="blockquote-footer">
+                  <cite title="Source Title">Filipe Fortes</cite>          </figcaption>
+
+                  <P>"Talk is cheap. Show me the code."</P>
+                  <figcaption class="blockquote-footer">
+                    <cite title="Source Title">Linus Torvald</cite>          </figcaption>
+
+                    <P>"Programming is not about typing, it's about thinking."</P>
+                    <figcaption class="blockquote-footer">
+                      <cite title="Source Title">Rich Hickey</cite>          </figcaption>
+
+                      <P>"The most important single aspect of software development is to be clear about what you are trying to build."</P>
+                      <figcaption class="blockquote-footer">
+                        <cite title="Source Title">Bjarne Stroustrup</cite>          </figcaption>
+
+                        <P>"The best way to predict the future is to invent it."</P>
+                        <figcaption class="blockquote-footer">
+                          <cite title="Source Title">Alan Kay</cite>          </figcaption>
+
+                          <P>"It's not a bug, it's an undocumented feature."</P>
+                          <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Anonymous</cite>          </figcaption>
+
+                            <P>"Testing leads to failure, and failure leads to understanding."</P>
+                            <figcaption class="blockquote-footer">
+                              <cite title="Source Title">Burt Rutan </cite>          </figcaption>
+
+                              <P>"Programs must be written for people to read, and only incidentally for machines to execute."</P>
+                              <figcaption class="blockquote-footer">
+                                <cite title="Source Title">Harold Abelson</cite>          </figcaption>
+
+             <P>"Coding is the art of turning imagination into reality, one line of code at a time."</P>
+             <figcaption class="blockquote-footer">
+            <cite title="Source Title">Unknown</cite>          </figcaption>
+
+           <P> "The beauty of coding lies in its power to change the world through innovative solutions."</P>
+           <figcaption class="blockquote-footer">
+          <cite title="Source Title">Jane Doe</cite>          </figcaption>
+          <P> "Coding is a journey of continuous learning and discovery. Embrace the adventure!"</P>
+          <figcaption class="blockquote-footer">
+         <cite title="Source Title">Mark Adams</cite>          </figcaption>
+
+          <p>These quotes celebrate the creativity, problem-solving, and continuous learning that are essential parts of the software development journey. They inspire and motivate developers to approach coding with passion and perseverance, acknowledging both the challenges and the reward that come with writing code and building innovative solutions..
+            
+              <a href="https://the-webdesigner.co/quotes-for-web-designers/#google_vignette">
+          See More...
+          </a>          
+        </p>
+      </figure>
+    </section>
+       
+       <section class=" rounded-3" style="margin-top: 30px;" >
+       <h2>Educational Tutorials:</h2>
+        <p>Step-by-step tutorials that break down complex concepts into easily understandable bites, making learning a breeze.</p>
+        <ol>
+          <li><strong>Web Development:</strong> Master the art of building dynamic and responsive web applications using HTML, CSS, and JavaScript. Explore popular front-end frameworks like React or Vue.js.          </li>
+          <li><strong>Software Architecture and Design Patterns:</strong> Understand the principles of software architecture and explore popular design patterns to create scalable and maintainable applications.          </li>
+          <li><strong>Software Testing:</strong> various testing methodologies to ensure the quality and reliability of your software projects.          </li>
+          <li><strong>Agile Software Development:</strong> Embrace the agile methodology and learn how to work effectively in collaborative development environments.          </li>
+          <li><strong>Real-World Projects:</strong>Apply your knowledge to real-world projects, working in teams and individually to develop innovative solutions.          </li>
+          <li><strong>Industry Insights:</strong>Benefit from guest lectures by seasoned professionals and gain insights into the latest trends and challenges in the software industry.          </li><hr>
+          <p>Throughout this course, you'll not only gain technical expertise but also cultivate problem-solving skills, teamwork, and critical thinking abilities. As you progress, you'll have the opportunity to build a strong portfolio showcasing your projects, setting you on the path to success in the world of software engineering.</p>
+          <p>Get ready to embark on an enriching learning journey that will open doors to endless possibilities in the software development domain. Let's code, create, and innovate together as you become a confident and competent software engineer. <a href="https://www.thinkeloquently.com" class="btn     rounded-pill px-3" style= "background-color: #ced4da;" role="button">Learn more....</a></p>
+
+        </ol>
+      
+    </section>
+        </div>
+    <hr>
+      <img src="./images/benefits-of-using-java-programming-language.jpg "  class="img-fluid" style="width: 725px;height: 300px;border-radius: 3%;">
+        <p>And this is a definition list:</p>
+        <section>
+        <dl>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">HyperText Markup Language (HTML)</dt>
+          <dd>The language used to describe and define the content of a Web page</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Cascading Style Sheets (CSS)</dt>
+          <dd>Used to describe the appearance of Web content</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">JavaScript (JS)</dt>
+          <dd>The programming language used to build advanced Web sites and applications</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Python (PY)</dt>     
+          <dd>Python is like a friendly, easy-to-read language that allows you to give instructions to a computer. It's known for its simplicity and versatility, making it great for beginners and experts alike.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Java (Java)</dt>
+          <dd>Java is like a robust and secure language that's widely used for building all kinds of applications, from mobile apps to big computer programs. It's known for its "write once, run anywhere" capability, which means you can use the same code on different devices.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">C++ (C++)</dt>
+          <dd>C++ is like a powerful language that lets you control your computer at a low level. It's used for creating software that needs to be really fast and efficient, like video games and operating systems.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Ruby (Ruby)</dt>
+          <dd>Ruby is like a language that values simplicity and readability. It's often used for web development, making it easier and more enjoyable for programmers to work on projects.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">C# (C Sharp)</dt>
+          <dd>C# is like a language similar to Java and C++. It's widely used for building Windows applications and video games. It's especially good for making software that works well with Microsoft technologies.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">PHP (PHP)</dt>
+          <dd>PHP is like a language specifically designed for web development. It's used to create dynamic websites that can display different content to different users and connect to databases to store and retrieve information.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Swift (Swift)</dt>
+          <dd>Swift is like a modern language developed by Apple for making apps on iPhones, iPads, and Mac computers. It's user-friendly and has a lot of features that make app development faster and safer.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">TypeScript (TS)</dt>
+          <dd>TypeScript is like a language that adds extra safety to JavaScript. It helps catch errors early in the development process and makes it easier to build large-scale JavaScript applications.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Node.js (Node)</dt>
+          <dd>Node.js is like a server-side JavaScript runtime environment. It allows developers to run JavaScript code outside of a web browser. With Node.js, you can build server applications that handle requests, process data, and interact with databases.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">React (React.js)</dt>
+          <dd>React is like a JavaScript library for building user interfaces on the web. It helps developers create dynamic and interactive components for web applications. React is known for its reusability and efficient rendering of components, making it a popular choice for modern web development.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Bootstrap (Bootstrap):</dt>
+          <dd> Bootstrap is like a toolkit that simplifies web development. It provides a collection of pre-designed and responsive components, such as buttons, forms, and navigation bars. With Bootstrap, developers can create visually appealing websites that work well on various devices. </dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Ruby on Rails (Rails):</dt>
+          <dd>Ruby on Rails is like a web application framework built on the Ruby programming language. It follows the "convention over configuration" principle, which simplifies and speeds up the development process by providing sensible defaults.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75"> (AngularJS/Angular): </dt>
+          <dd>Angular is a JavaScript framework developed by Google for building dynamic web applications. It provides a structured architecture and two-way data binding, making it easier to manage complex user interfaces.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Vue.js (Vue):</dt>
+          <dd>Vue.js is a progressive JavaScript framework for building user interfaces. It's known for its simplicity and ease of integration with existing projects. Vue.js is often compared to React and Angular.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Django (Django): </dt>
+          <dd>Django is like a high-level web framework built on Python. It's designed for rapid development and follows the "Don't Repeat Yourself" (DRY) principle, encouraging efficient and maintainable code.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Flask (Flask): </dt>
+          <dd>Flask is a micro web framework for Python. It's lightweight and easy to use, making it a popular choice for small to medium-sized web applications.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Laravel (Laravel): </dt>
+          <dd>Laravel is a PHP web framework that focuses on developer productivity and code readability. It provides a robust set of tools and features for building modern web applications.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Spring Boot (Spring Boot): </dt>
+          <dd>Spring Boot is like a Java-based framework for building production-ready applications quickly. It simplifies the configuration and setup of Spring applications and comes with built-in features for various use cases.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Express.js (Express):</dt>
+          <dd>Express.js is a minimal and flexible web application framework for Node.js. It provides a straightforward way to create server-side applications and APIs.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">Flutter (Flutter): </dt>
+          <dd>Flutter is like a UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. It's primarily used for cross-platform mobile app development.</dd>
+          <dt class="shadow p-1 bg-body rounded bg-opacity-75">NET (ASP.NET):</dt> 
+          <dd>.NET is a framework developed by Microsoft for building web, desktop, mobile, and cloud-based applications. ASP.NET is the web development framework within the .NET ecosystem.</dd>
+        </dl>
+      </section>
+      </article>
+        <article >
+        <h2 >Inline HTML Elements</h2>
+        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+        <ul>
+          <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+          <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+          <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+          <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+          <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+          <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+        </ul>
+        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+        <h2>Heading</h2>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Sub-heading</h3>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <pre><code>Example code block</code></pre>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. <a href="https://www.thinkeloquently.com" class="btn     gogo       rounded-pill px-3" role="button">Learn more....</a></p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">I Will Never Be Poor</h2>
+        <p class="blog-post-meta">Juy 30, 2023 by <a href="https://instagram.com/kingmo2great?igshid=OGQ5ZDc2ODk2ZA==">Jerry Great</a></p>
+         <img src="./images/WhatsApp Image 2023-07-31 at 3.28.22 PM.jpeg"  class="img-fluid" style="width: 300px;height: 200px; border-radius: 3% ">
+        <p>I am determined to never be poor. I know that with hard work and dedication, I can achieve financial success. I believe that by setting goals, creating a plan, and taking action, I can create the life I want.
+
+          One of the first things I did was to educate myself about money.   . I read books, watched videos, and listened to podcasts about personal finance. I learned about budgeting, saving, investing, and building wealth. I also learned about the importance of having a positive mindset and believing in myself.
+          
+          
+          I then created a plan to achieve my financial goals. 
+          <p>I set specific, measurable, achievable, relevant, and time-bound <strong>(SMART)</strong> goals for myself. I created a budget and started tracking my expenses. I also started saving money and investing in my future.
+          
+          I took action by making changes in my life. I cut back on unnecessary expenses and started living below my means. I started earning more money by taking on side hustles and investing in myself. I also started building a network of like-minded people who could support me on my journey.
+          
+          <blockquote> I know that the road to <strong>financial success</strong> is not easy, but I am committed to achieving my goals. I believe that with hard work, dedication, and a positive mindset, I can create the life I want. I will never be poor because I am taking action to create <strong>my financial future.</strong></p>
+        </blockquote>
+        </p>
+
+        <article class="blog-post" >
+          <h2 class="display-5 link-body-emphasis mb-1">Women in Tech: </h2>
+          <h4>Shaping the Future of Innovation</h4>
+          <p class="blog-post-meta">Aug 1, 2023 by <a href="#">Perosolami</a>
+           <img src="./images/women in tech.jpeg"  class="img-fluid" style="width: 730px;height: 400px; border-radius: 3%;margin-top: 10px;"></p>
+           <h4 style="display: inline-block;  border-radius: 5px;"><strong>Introduction</strong></h4>
+            <p>In the world of <strong>technology</strong>, women have been instrumental in driving innovation, shaping the digital landscape, and challenging the status quo. Despite their valuable contributions, the tech industry has historically been male-dominated, leaving women underrepresented and facing unique challenges. However, the tide is turning, and more women are breaking barriers and making significant strides in tech. This article explores the impact of women in the tech industry, their achievements, the challenges they face, and the initiatives working towards a more inclusive and diverse future.
+             <p> <strong>Historical Context: Pioneering Women in Tech</strong>
+            
+            The history of women in tech is rich with trailblazers who defied societal norms and paved the way for future generations. Ada Lovelace, widely regarded as the world's first computer programmer, was instrumental in developing the first algorithm intended for a machine. In the mid-20th century, women like Grace Hopper and the ENIAC programmers played a pivotal role in the early days of computing. Despite their pioneering work, many of these women's contributions were overlooked or overshadowed by their male counterparts.<br>
+            
+           <p> <strong>Challenges Faced by Women in Tech:</strong>
+            
+            The tech industry has long struggled with gender disparities, and women face various challenges that hinder their progress and representation. One primary challenge is the persistent gender bias, leading to fewer opportunities for women to advance in their careers. The lack of female role models and mentors can also deter young women from pursuing tech-related fields. Additionally, workplace culture and unconscious biases can create an environment that is unwelcoming for women, contributing to lower retention rates.</p>
+            
+            <p><strong>Empowering Women in Tech: Initiatives and Movements</strong>
+            
+            Thankfully, the landscape is changing as the industry recognizes the importance of diversity and inclusion. Numerous initiatives and movements are working to empower women in tech and bridge the gender gap. Organizations like Girls Who Code, Women Who Code, and AnitaB.org provide platforms for women to learn, network, and advance their careers in tech. Many companies are implementing diversity and inclusion programs, ensuring that women have equal opportunities for leadership positions.</p>
+            
+            <p><strong>Celebrating Success: Women's Contributions to Tech</strong>
+            
+            Despite the challenges, women continue to excel in various tech-related fields, leaving an indelible mark on the industry. In the field of artificial intelligence, Fei-Fei Li has made significant contributions, advancing computer vision and machine learning. Reshma Saujani's work with Girls Who Code has empowered thousands of young girls to pursue careers in technology.</p>
+            <p>Dr. Hessa Al Jaber, a prominent figure in the Middle East's tech sector, has been instrumental in promoting digital innovation and e-governance.
+            
+            Fostering an Inclusive Future
+            
+            Building a more inclusive future in tech is not only a matter of social justice but also a strategic imperative. Research consistently shows that diverse teams lead to more creativity, better problem-solving, and increased innovation. Companies that embrace diversity are better equipped to understand their diverse customer base and develop products that cater to various needs.
+            
+            To foster an inclusive future, it is essential to address the biases and systemic barriers that hinder women's progress. Encouraging young girls to pursue STEM education from an early age, providing mentorship programs, and promoting workplace policies that support work-life balance are crucial steps towards achieving gender parity.</p>
+            
+            <strong>Conclusion</strong><br>
+            
+            Women have always been at the forefront of innovation and progress in tech, even in the face of significant challenges. Their contributions have shaped the digital world and revolutionized industries. However, there is still much work to be done to create a more equitable and inclusive tech industry. By breaking barriers, empowering women through education and mentorship, and challenging gender biases, we can pave the way for a brighter future where women's voices and talents are truly embraced and celebrated in the world of technology. Let us embrace diversity, equality, and inclusion, working hand in hand to build a tech world that represents the true potential of all its members.
+            </p>
+          <blockquote>
+            <p><strong>emphasized text</strong> </p>
+          </blockquote>
+          <p> </p>
+    
+             <h3>Have Your Say!
+        </h3>
+        <p>Rating Scale</p>
+        <table class="table table-hover ">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Upvotes</th>
+              <th>Downvotes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hope4dbestlove999</td>
+              <td>100%</td>
+              <td>Excellent</td>
+            </tr>
+            <tr>
+              <td>SkinnyAyomi</td>
+              <td>100%</td>
+              <td>Good Job</td>
+            </tr>
+            <tr>
+              <td>EOS</td>
+              <td>100%</td>
+              <td>Well Deserved</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Totals</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tfoot>
+        </table>
+ 
+        <p>Thank you for being part of our amazing community. We couldn't do it without you!
+
+        </p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">Introducing New Feature</h2>
+        <p class="blog-post-meta">December 14, 2020 by <a href="https://instagram.com/perosolamii?igshid=OGQ5ZDc2ODk2ZA==">CEO|CTO</a></p>
+
+        <p>I am thrilled to announce that I've been hard at work behind the scenes to bring you some incredible new features to my platform! My mission has always been to provide you with the best possible experience, and these upcoming additions are designed to do just that..</p>
+        <P>Here's a sneak peek of what's in store: </P> 
+        <ul>
+          <li>Get ready to be amazed.</li>
+          <li>i can't wait to see the creative ways you'll use this powerful features.</li>
+          <li>Enhanced User Profiles: I know you love connecting with other users and building meaningful relationships on this platform. To make this even better, I am revamping user profiles! You'll now have more customization options and an improved interface to showcase your skills and accomplishments.          </li>
+        </ul>
+        <p>Stay tuned and stay awesome!,<br>
+           Best regards,<hr>
+           Ereyomi
+          </p>
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn bg-danger-subtle rounded-pill" href="#">Older</a>
+        <a class="btn  bg-danger-subtle rounded-pill disabled" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 allok img-fluid bg-body-tertiary rounded">
+          <h4 class="fst-italic" style="color: antiquewhite;">Can We Pray?</h4>
+          <p class="mb-0" style="font-style: italic; font-weight: 100; color: aliceblue;">Teach me to PRAY<br>I want to meet my LOVER<br>
+          son of God I'm sorry i kept you WAITING<br> I AM YOURS!</p>
+          <div class="button-container mylogo">
+            <a class="btn-custom logo2" href="https://www.tiktok.com/@thebearerprayer?lang=en"><img src="./images/8579523.png" alt="Logo"></a>
+         <a class="btn-custom logo2" href="https://youtube.com/@the.bearer.of.his.presence"><img src="./images/YouTube_full-color_icon_(2017).svg.png" alt="Logo"></a>
+         <a class="btn-custom logo2" href="https://audiomack.com/thebearer/album/can-we-pray"><img src="./images/vector-sign-of-download-icon.jpg" alt="Logo"style="border-radius:40%;"></a>
+      </div>
+    </div> 
+
+        <div>
+          <h4 class="fst-italic">Recent posts</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top " href="#">
+                <img src="./images/WhatsApp Image 2023-07-30 at 4.08.01 PM.jpeg" class="ohoh" alt="Meditation Muse" width="130" height="100%">
+                <div class="col-lg-8">
+                  <h6 class="mb-0">MEDITATION MUSE: <br>Signifying the role of meditation as a source of inspiration and creativity.                  </h6>
+                  <p>How to create a meditation space in your home.</p>
+                  <small class="text-body-secondary">January 15, 2023</small>
+                </div>
+                <a href="your_page_url_here.html">
+                  <button type="button" class="btn  bg-warning" data-category="meditation" style="margin-top: -25px;">Read More</button>
+            
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <img src="./images/WhatsApp Image 2023-07-30 at 4.10.12 PM.jpeg" class="ohoh" alt="Meditation Muse" width="130" height="100%">
+                <div class="col-lg-8">
+                  <h6 class="mb-0">YumDiaries</h6>
+                  <p>"Feast Your Eyes, Feed Your Soul"</p>
+                  <small class="text-body-secondary">January 14, 2023</small>
+                </div>
+                <a href="your_page_url_here.html">
+                  <button type="button" class="btn bg-warning" data-category="meditation" style="margin-top: -25px;">See More</button>            
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <img src="./images/WhatsApp Image 2023-07-30 at 4.10.27 PM - Copy.jpeg" class="ohoh"  alt="Meditation Muse" width="130" height="100%">
+                <div class="col-lg-8">
+                  <h6 class="mb-0">MY DAILY HUE!</h6>
+                  <p>"Elevate Your Everyday"                  </p>
+                  <small class="text-body-secondary">January 13, 2023</small>
+                </div>
+                <a href="your_page_url_here.html">
+                  <button type="button" class="btn bg-warning" data-category="meditation" style="margin-top: 5px;">See More</button>            
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Archives</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#"class="link-secondary">March 2021</a></li>
+            <li><a href="#"class="link-secondary">February 2021</a></li>
+            <li><a href="#"class="link-secondary">January 2021</a></li>
+            <li><a href="#"class="link-secondary">December 2020</a></li>
+            <li><a href="#"class="link-secondary">November 2020</a></li>
+            <li><a href="#"class="link-secondary">October 2020</a></li>
+            <li><a href="#"class="link-secondary">September 2020</a></li>
+            <li><a href="#"class="link-secondary">August 2020</a></li>
+            <li><a href="#"class="link-secondary">July 2020</a></li>
+            <li><a href="#"class="link-secondary">June 2020</a></li>
+            <li><a href="#"class="link-secondary">May 2020</a></li>
+            <li><a href="#"class="link-secondary">April 2020</a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Contact Me</h4>
+          <ol class="list-unstyled">
+            <li>
+              <a href="https://github.com/EreyomiF" class="link-secondary">
+                <img src="./images/GitHub-Mark.png" alt="GitHub Logo" id="github-icon" width="50" height="50" style="border-radius: 50%;">
+              </a>
+            </li><br>
+            <li>
+              <a href="https://www.linkedin.com/in/funmilola-ereyomi-a88026268" class="link-secondary">
+                <img src="./images/LinkedIn_icon.svg.png" alt="GitHub Logo" id="github-icon" width="40" height="40" style="border-radius: 50%;">
+              </a>
+            </li><br>
+            <li>
+              <a href="#" class="link-secondary">
+                <img src="./images/8579523.png" alt="GitHub Logo" id="github-icon" width="40" height="40" style="border-radius: 50%;">
+              </a>
+            </li>
+            <li><br>
+              <a href="ereyomifunmilola1998@yahoo.com" class="link-secondary">
+                <img src="./images/email.png" alt="GitHub Logo" id="github-icon" width="40" height="40" style="border-radius: 50%;">
+              </a>
+            </li><br>
+            <li>
+              <a href="https://instagram.com/devs_nerds_exploration?igshid=OGQ5ZDc2ODk2ZA==" class="link-secondary">
+                <img src="./images/266-2661594_facebook-logo-instagram-logo-ios-9-instagram-icon.png" alt="GitHub Logo" id="github-icon" width="40" height="40" style="border-radius: 50%;">
+              </a>
+            </li>              
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: -50px;">
+  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="comment-box" style="background-color: #a6a6a5; max-width: 600px; width: 100%; padding: 50px;">
+      <h2 class="text-center">Add a Comment</h2>
+      <div class="rating d-flex justify-content-center"> 
+        
+          
+        <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> 
+        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+      </div><br>
+      <br>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div><br>
+      <textarea class="comment-area form-control" rows="5" placeholder="Write your comment here..." style="resize: none;"></textarea>
+      <button class="btn btn-secondary mt-3 d-block mx-auto" style="background-color: #f8f8f8; height: 50px;width: 80px; color: rgb(10, 10, 10); border-radius: 5%;">Submit</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container" >
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">RELATIONSHIPS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FEATURES</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">HEALTH & WELLNESS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">LEGAL AND PRIVACY</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">+MORE</a></li>
+      </ul>
+      <p class="text-center text-body-dark">Made with ❤️ by EreyomiF. </p>
+    </footer>
+  </div>
+  
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+<script src="./index4.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,248 @@
+.h-100 {
+  background-image: url('./images/WhatsApp\ Image\ 2023-07-30\ at\ 4.26.38\ AM.jpeg');
+  background-size: 100% 100%;/* Add any additional CSS styles for the text-bg-dark div here */
+  background-size: cover;
+  background-position: center;
+    
+  }
+  
+
+.h-100.text-bg-dark{
+  background-image: url('./images/WhatsApp\ Image\ 2023-08-01\ at\ 3.20.49\ AM.jpeg');
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position: center;
+  background-size: cover;
+background-size: 100% 100%;/* Add any additional CSS styles for the bg-body-tertiary div here */
+}
+
+.position-sticky {
+  position: sticky;
+  top: 2rem;
+}
+
+/* Add background image to the container */
+.allok {
+  background-image: url("./images/WhatsApp\ Image\ 2023-07-30\ at\ 5.12.50\ AM\ \(2\).jpeg"); /* Replace with your image path or URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px; /* Add some padding to the container */
+  border-radius: 10px; 
+  position:relative ;/* Add rounded corners to the container */
+
+
+/* Custom CSS for the button link */
+display: flex;
+flex-direction: column; /* Align items vertically in a column */
+
+justify-content:space-between;
+width: 400px;
+height: 500px;}
+
+
+.btn-custom img {
+  width: 20px; /* Adjust the width as per your logo size */
+  height: 20px; 
+  /* This will maintain the aspect ratio */
+ /* To remove extra space below the image */ /* Center the image horizontally inside the button */
+}
+
+
+.button-container{
+  position: absolute;
+      bottom: 0;
+      left: 0;
+}
+
+
+.btn-custom img {
+   /* Adjust the width as per your logo size */
+  margin: 0 auto; /* Center the image horizontally inside the button */
+}
+
+
+
+.gogo{ background-color: rgb(176, 174, 174);}
+
+@keyframes colorChange {
+  10% { background-color: #cee6f3; }
+  50% { background-color: #Ba704f; }
+  75% { background-color: #Dfa878; }
+  100% { background-color: #6c3428; }
+
+}
+
+/* Apply the animation to the target element */
+.gothere {
+  width: 100px;
+  height: 100px;
+  animation: colorChange 3s infinite alternate;
+}
+
+h1.typewriter {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black; /* Cursor effect */
+  display: inline-block;
+  margin: 0;
+}
+
+.comment-box {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.comment-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: vertical;
+}
+
+.comment-box button {
+  display: block;
+  padding:  5px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.comment-box button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+#preload
+{
+	display: none;
+}
+
+.holder
+{
+	width: 300px;
+	height: 300px;
+	border: 5px solid #ffffff;
+	margin: 40px auto;
+	
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 50%;
+	
+	box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+#photo-holder
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.section
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	overflow: hidden;
+	border-radius: 50%;
+	position: absolute;/*
+	transition: background-image 1s ease;*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+
+
+
+.comment-area{
+    
+    padding:5px;
+}
+
+
+
+.comment-area textarea{
+   resize: none; 
+        border: 1px solid #ad9f9f;
+}
+
+
+
+.rating {
+ display: flex;
+        margin-top: -10px;
+    flex-direction: row-reverse;
+    margin-left: -4px;
+        float: left;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+        position: relative;
+    width: 19px;
+    font-size: 25px;
+    color: #0c0b0b;
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+body{
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+
+}
+
+#github-icon {
+  animation: spin 2s linear infinite; /* Adjust animation duration as needed */
+  /* Set the desired height for the SVG */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ohoh{border-radius: 5%;}
+
+
